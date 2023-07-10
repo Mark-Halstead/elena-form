@@ -1,0 +1,95 @@
+.survey_general_container label {
+    color: #333;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+  }
+  .survey_general_container select {
+    width: 100%;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+    padding: 6px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI1NSAyNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NSAyNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iYXJyb3ctZHJvcC1kb3duIj4KCQk8cG9seWdvbiBwb2ludHM9IjAsNjMuNzUgMTI3LjUsMTkxLjI1IDI1NSw2My43NSAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 13px;
+    background-origin: content-box;
+    background-color: #fff;
+    outline: none;
+  }
+  .survey_general_container select[multiple] {
+    height: auto;
+    background: none;
+    overflow: auto;
+  }
+  .survey_general_container span.ps_required {
+    color: red;
+    margin-left: -5px
+  }
+  .survey_general_container .survey_textarea {
+    width: 100%;
+    outline: none !important;
+  }
+  .survey-container .ps_progressbar_generalcontainer {
+    overflow: hidden;
+  }
+  button.post-edit-btn.ps_survey_btn_submit.survey_submit_btn,
+  .swal-button {
+    padding: 11px 20px;
+    margin: 0;
+    border-radius: 3px;
+    font-size: 17px;
+    text-transform: none;
+  }
+  .survey_general_container  input[type='date'],
+  .survey_general_container  input[type='number'],
+  .survey_general_container  input[type='email'],
+  .survey_general_container  input[type='text']{
+    width: 100%;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+    padding: 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 13px;
+    background-origin: content-box;
+    background-color: #fff;
+  }
+  @media (max-width: 992px) {
+    .ps_matrix_responsiveness .ps_label_table {
+      background: #efefef
+    }
+    .ps_matrix_responsiveness tbody th,
+    .ps_matrix_responsiveness tbody td,
+    .ps_matrix_responsiveness tbody tr {
+      display: block;
+      width: 100%
+    }
+    .ps_matrix_responsiveness .ps-centered{
+      text-align: left;
+      background: #fff
+    }
+    .ps_header_hide_mobile {
+      display: none
+    }
+    .ps_header_hide_descktop {
+      display: inline-block
+    }
+    .ps_survey_suspended,
+    .survey-complete-message {
+      padding: 20px;
+    }
+    .survey_general_container .survey-image-block-frontend {
+      width: calc(100% - 12px);
+    }
+    .ps_icon_search_image {
+      opacity: 1;
+      transform: translatey(-50%);
+    }
+  }
+  
