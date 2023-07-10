@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Survey Form</title>
     <style>
@@ -7,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         .survey-container {
             max-width: 600px;
             margin: 0 auto;
@@ -14,25 +16,31 @@
             background-color: #f7f7f7;
             border-radius: 5px;
         }
+
         .survey-container h1 {
             text-align: center;
             margin-bottom: 30px;
         }
+
         .survey-item {
             margin-bottom: 20px;
         }
+
         .survey-item label {
             display: block;
             margin-bottom: 10px;
         }
+
         .survey-item input[type="range"] {
             width: 100%;
         }
+
         .survey-item output {
             display: block;
             text-align: right;
             margin-bottom: 10px;
         }
+
         .survey-item input[type="text"],
         .survey-item textarea {
             width: 100%;
@@ -40,9 +48,11 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
         .survey-item textarea {
             resize: vertical;
         }
+
         .survey-item button {
             display: block;
             width: 100%;
@@ -53,41 +63,48 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .survey-item button:hover {
             background-color: #0056b3;
         }
+
         /* Add the CSS from ChatWithGit here */
         /* ... */
     </style>
 </head>
+
 <body>
     <div class="survey-container">
+        <h1>Maudsley 3-item Visual Analogue Scale</h1>
+        <h2>Calum D. Moulton, Rebecca Strawbridge, Dimosthenis Tsapekos, Emanuella Oprea, Ben Carter, Chloe Hayes,
+            Anthony J. Cleare, Lindsey Marwood, Tim Mantingh, Allan H. Young</h2>
+        <p>M3VAS-Current</p>
+        <p>In the following questions you will be asked to describe the way you have been feeling for the past 2 weeks.
+            Please read the instructions carefully before answering and ask a researcher if you have any questions.</p>
         <h1>Survey Form</h1>
         <form>
             <div class="survey-item">
-                <label for="question1">Question 1</label>
-                <input type="range" id="question1" name="question1" min="0" max="100" oninput="output1.value = question1.value">
+                <label for="question1">Quality of your mood: Place a vertical mark on the line to indicate how your mood
+                    has been over the past 2 weeks.</label>
+                <input type="range" id="question1" name="question1" min="0" max="100"
+                    oninput="output1.value = question1.value">
                 <output id="output1">50</output>
             </div>
             <div class="survey-item">
-                <label for="question2">Question 2</label>
-                <input type="range" id="question2" name="question2" min="0" max="100" oninput="output2.value = question2.value">
+                <label for="question2">Experience of pleasure: Place a vertical mark on the line to indicate your
+                    ability to enjoy life activities (e.g. work, family and friends, hobbies, television, books or
+                    magazines, meals etc.) over the past 2 weeks.</label>
+                <input type="range" id="question2" name="question2" min="0" max="100"
+                    oninput="output2.value = question2.value">
                 <output id="output2">50</output>
             </div>
             <div class="survey-item">
-                <label for="question3">Question 3</label>
-                <input type="range" id="question3" name="question3" min="0" max="100" oninput="output3.value = question3.value">
+                <label for="question3">Experience of suicidal thoughts and feelings: Place a vertical mark on the line
+                    to indicate how severely/frequently you have experienced thoughts or feelings about suicide over the
+                    past 2 weeks.</label>
+                <input type="range" id="question3" name="question3" min="0" max="100"
+                    oninput="output3.value = question3.value">
                 <output id="output3">50</output>
-            </div>
-            <div class="survey-item">
-                <label for="question4">Question 4</label>
-                <input type="range" id="question4" name="question4" min="0" max="100" oninput="output4.value = question4.value">
-                <output id="output4">50</output>
-            </div>
-            <div class="survey-item">
-                <label for="question5">Question 5</label>
-                <input type="range" id="question5" name="question5" min="0" max="100" oninput="output5.value = question5.value">
-                <output id="output5">50</output>
             </div>
             <div class="survey-item">
                 <button type="submit">Submit</button>
@@ -95,5 +112,5 @@
         </form>
     </div>
 </body>
-</html>
 
+</html>
